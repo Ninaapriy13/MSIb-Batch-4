@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hewan & Suaranya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<style>
+	.flex-container {
+	  display: flex;
+	  background-color: #7AA874;
+	}
+
+	.flex-container > div {
+	  background-color: #3F497F;
+	  margin: 10px;
+	  padding: 20px;
+	  font-size: 30px;
+	}
+	</style>
+  </head>
+  <body>
+    <h3 align="center" style="background-color:darkorange;">HEWAN & SUARANYA</h3>
+	<div class="accordion" id="accordionExample">
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingOne">
+		  <button style="background-color:chocolate;" font-color="black" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			Hewan Ternak
+		  </button>
+		</h2>
+		<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<div class="flex-container">
+			  <div class="sapi">Sapi</div>
+			  <div class="bebek">Bebek</div>
+			  <div class="kambing">Kambing</div>  
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwo">
+		  <button style="background-color:chocolate;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			Hewan Peliharaan
+		  </button>
+		</h2>
+		<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<div class="flex-container">
+			<div class="kucing">Kucing</div>
+			<div class="anjing">Anjing</div>
+			<div class="burungpipit">Burung pipit</div> 
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingThree">
+		  <button style="background-color:chocolate;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			Hewan Buas
+		  </button>
+		</h2>
+		<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<div class="flex-container">
+				<div class="harimau">Harimau</div>
+				<div class="serigala">Serigala</div>
+				<div class="komodo">Komodo</div> 
+		  </div>
+		</div>
+	  </div>
+	</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/jquery.js"></script>
+	<script>
+	//Hewan Ternak
+	$("document").ready(function () {
+            $("div.sapi").click(function () {
+                $(this).css({
+                    background: "url('Image/sapi.jpg')"
+                });
+            });
+            $("div.sapi").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara-sapi.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+	
+	$("document").ready(function () {
+            $("div.bebek").click(function () {
+                $(this).css({
+                    background: "url('Image/bebek.jpg')"
+                });
+            });
+            $("div.bebek").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara-bebek.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+
+	$("document").ready(function () {
+            $("div.kambing").click(function () {
+                $(this).css({
+                    background: "url('Image/kambing.jpg')"
+                });
+            });
+            $("div.kambing").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara-kambing.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+
+	//Hewan Peliharaan
+	$("document").ready(function () {
+            $("div.kucing").click(function () {
+                $(this).css({
+                    background: "url('Image/kucing.jpg')"
+                });
+            });
+            $("div.kucing").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara-kucing.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+
+	$("document").ready(function () {
+            $("div.anjing").click(function () {
+                $(this).css({
+                    background: "url('Image/anjing.jpg')"
+                });
+            });
+            $("div.anjing").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara-anjing.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+
+	$("document").ready(function () {
+            $("div.burungpipit").click(function () {
+                $(this).css({
+                    background: "url('Image/burung pipit.jpg')"
+                });
+            });
+            $("div.burung pipit").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara-burung-pipit.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+
+	//Hewan Buas
+	$("document").ready(function () {
+            $("div.harimau").click(function () {
+                $(this).css({
+                    background: "url('Image/harimau.jpg')"
+                });
+            });
+            $("div.harimau").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara harimau.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+
+	$("document").ready(function () {
+            $("div.serigala").click(function () {
+                $(this).css({
+                    background: "url('Image/serigala.jpg')"
+                });
+            });
+            $("div.serigala").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara serigala.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+
+	$("document").ready(function () {
+            $("div.komodo").click(function () {
+                $(this).css({
+                    background: "url('Image/komodo.jpg')"
+                });
+            });
+            $("div.komodo").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/suara komodo.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+	});
+	</script>
+  </body>
+</html>
